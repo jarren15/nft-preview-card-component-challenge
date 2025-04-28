@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 18px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+main {
+  padding-block: 5%;
+  padding-inline: 35%;
+  background-color: #0d192b;
+}
+
+.card {
+  background-color: #14253d;
+  color: #8bacda;
+  border-radius: 1rem;
+  font-weight: 300;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.card:hover .card__header:after {
+  content: url(../images/icon-view.svg);
+  position: absolute;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 255, 247, 0.5);
+}
+.card:hover .card__title, .card:hover .card__owner-name {
+  color: #00fff7;
+}
+.card__container {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.card__header {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.card__title {
+  color: #ffffff;
+  font-weight: 600;
+}
+.card__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5rem;
+}
+.card__price, .card__expiration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+.card__price img, .card__expiration img {
+  width: 1em;
+}
+.card__price {
+  font-weight: 400;
+  color: #00fff7;
+}
+.card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid #2f415b;
+}
+.card__owner-icon {
+  width: 2em;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+.card__owner-name {
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */

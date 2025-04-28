@@ -1,0 +1,90 @@
+@use "vars";
+
+.card {
+  background-color: vars.$color-darkBlueCard;
+  color: vars.$color-softBlue;
+  border-radius: 1rem;
+  font-weight: 300;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover &__header {
+    &:after {
+      content: url(../images/icon-view.svg);
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(vars.$color-cyan, 0.5);
+    }
+  }
+
+  &:hover &__title,
+  &:hover &__owner-name {
+    color: vars.$color-cyan;
+  }
+
+  &__container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__header {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__title {
+    color: vars.$color-white;
+    font-weight: 600;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  &__price,
+  &__expiration {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    img {
+      width: 1em;
+    }
+  }
+
+  &__price {
+    font-weight: 400;
+    color: vars.$color-cyan;
+  }
+
+  &__footer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid vars.$color-darkBlueLine;
+  }
+
+  &__owner-icon {
+    width: 2em;
+    border-radius: 50%;
+    border: 2px solid vars.$color-white;
+  }
+
+  &__owner-name {
+    color: vars.$color-white;
+  }
+}
