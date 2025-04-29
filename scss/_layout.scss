@@ -1,7 +1,16 @@
 @use "vars";
+@use "breakpoints";
 
 main {
-  padding-block: 5%;
-  padding-inline: 35%;
   background-color: vars.$color-darkBlueMain;
+  padding: 1.5rem;
+
+  @include breakpoints.md {
+    padding-block: 5%;
+    padding-inline: 25%;
+  }
+
+  @include breakpoints.lg {
+    padding-inline: 35%;
+  }
 }

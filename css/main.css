@@ -57,9 +57,19 @@ h6 {
 }
 
 main {
-  padding-block: 5%;
-  padding-inline: 35%;
   background-color: #0d192b;
+  padding: 1.5rem;
+}
+@media (min-width: 768px) {
+  main {
+    padding-block: 5%;
+    padding-inline: 25%;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    padding-inline: 35%;
+  }
 }
 
 .card {
@@ -92,7 +102,8 @@ main {
   color: #00fff7;
 }
 .card__container {
-  padding: 2rem;
+  padding: 1rem;
+  gap: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +111,18 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .card__container {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .card__container {
+    padding: 2rem;
+    gap: 2rem;
+  }
 }
 .card__header {
   position: relative;
@@ -115,7 +137,17 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .card__body {
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .card__body {
+    gap: 2rem;
+  }
 }
 .card__title {
   color: #ffffff;
@@ -128,7 +160,12 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .card__details {
+    gap: 1.5rem;
+  }
 }
 .card__price, .card__expiration {
   display: -webkit-box;
@@ -154,8 +191,18 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
   border-top: 1px solid #2f415b;
+}
+@media (min-width: 768px) {
+  .card__footer {
+    padding-top: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .card__footer {
+    padding-top: 2rem;
+  }
 }
 .card__owner-icon {
   width: 2em;
